@@ -11,5 +11,5 @@ const Template: ComponentStory<typeof LetterBox> = (args) => <LetterBox {...args
 const Default = Template.bind({});
 Default.args = {};
 
-export { LetterBox, Default };
+export { Default };
 export default LetterBoxStory;

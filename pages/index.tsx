@@ -4,17 +4,27 @@ import Image from "next/image";
 import { LetterBox } from "../components";
 import styles from "../styles/Home.module.css";
 import { GlobalStyle } from "../styles/globalStyles";
+import { DEFAULT_THEME } from "../constants";
+import getTheme from "../theme/theme";
+import { ThemeProvider } from "styled-components";
 
 const Home: NextPage = () => {
+  const theme = getTheme(DEFAULT_THEME);
+
   return (
     <>
       <Head>
         <title>Six Guesses</title>
-        <meta name="description" content="For those who want to wait for a similar game" />
+        <meta
+          name="description"
+          content="For those who want to wait for a similar game"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalStyle />
-      <LetterBox />
+      <ThemeProvider theme={theme}>
+        <LetterBox />
+      </ThemeProvider>
     </>
   );
 };

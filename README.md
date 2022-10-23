@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Color pallette: https://colorhunt.co/palette/222831393e4600adb5eeeeee
+
 First, install the dependencies:
 
 ```bash

@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { LetterBox } from "../components";
-import styles from "../styles/Home.module.css";
+import { Header } from "../components";
 import { GlobalStyle } from "../styles/globalStyles";
 import { DEFAULT_THEME } from "../constants";
 import getTheme from "../theme/theme";
@@ -23,7 +22,7 @@ const Home: NextPage = () => {
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <LetterBox />
+        <Header />
       </ThemeProvider>
     </>
   );

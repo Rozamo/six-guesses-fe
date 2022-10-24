@@ -1,3 +1,7 @@
 const DEFAULT_THEME = "light";
 
-export { DEFAULT_THEME };
+const NUMBER_OF_GUESSES = 6;
+
+const WORD_LENGTH = 5;
+
+export { DEFAULT_THEME, NUMBER_OF_GUESSES, WORD_LENGTH };

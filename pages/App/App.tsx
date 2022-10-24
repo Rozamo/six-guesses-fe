@@ -1,13 +1,15 @@
 import React from "react";
 import { NextPage } from "next";
 import { Header } from "../../components";
-import Board from "./components/Board";
+import { Board, GameRow } from "./components";
 
 const App: NextPage = () => {
   return (
     <>
       <Header />
-      <Board>Board</Board>
+      <Board>
+        <GameRow />
+      </Board>
     </>
   );
 };
